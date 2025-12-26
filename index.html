@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница Список чтения</title>
+    <style>
+        body {
+            font-family: Segoe Print;
+            background: linear-gradient(135deg, #007539, #004220);
+            color: #f0f0f5;
+            margin: 0;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 7px rgba(0,0,0,0.45);
+        }
+        p {
+            max-width: 700px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 0.03em;
+            color: #e0e0e8;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 45px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ff9900;
+            font-size: 1.3em;
+            font-weight: 600;
+            padding: 12px 28px;
+            border: 2px solid #ff9900;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(255, 213, 79, 0.55);
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            min-width: 140px;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #ff9900;
+            color: #ed690b;
+            box-shadow: 0 6px 20px rgba(255, 213, 79, 0.85);
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                max-width: 90%;
+                font-size: 1em;
+            }
+            nav ul {
+                gap: 25px;
+                flex-direction: column;
+            }
+            nav ul li a {
+                min-width: auto;
+                padding: 10px 20px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Начни читать уже сейчас!</h1>
+    <p><img src="книги.ico" alt="книги" width="100" height="100"> Маленький сайт для большого чтения. Ваш цифровой книжный уголок. #читать #уют #простотекст</p>
+    <nav>
+        <ul>
+            <li><a href="tale.html">Сказки</a></li>
+            <li><a href="novels.html">Романы</a></li>
+            <li><a href="classic.html">Детективы</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
